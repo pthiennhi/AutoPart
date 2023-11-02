@@ -1,17 +1,31 @@
 package group5.com.prm_autopartssale.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
-import androidx.fragment.app.Fragment;
+import android.os.Debug;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.PopupMenu;
+import android.widget.Toast;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import group5.com.prm_autopartssale.R;
+import group5.com.prm_autopartssale.fragment.profile.ChangeInformationFragment;
+import java.io.Console;
 
 /**
  * A simple {@link Fragment} subclass. Use the {@link ProfileFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
 public class ProfileFragment extends Fragment {
+
+  LinearLayout llChangeInformation;
+  ImageView ivBack, ivMore;
 
   // TODO: Rename parameter arguments, choose names that match
   // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -56,7 +70,56 @@ public class ProfileFragment extends Fragment {
   @Override
   public View onCreateView(LayoutInflater inflater, ViewGroup container,
       Bundle savedInstanceState) {
-    // Inflate the layout for this fragment
-    return inflater.inflate(R.layout.fragment_profile, container, false);
+    View rootView = inflater.inflate(R.layout.fragment_profile, container, false);
+
+    llChangeInformation = rootView.findViewById(R.id.ll_change_information);
+    ivMore = rootView.findViewById(R.id.iv_more);
+    ivBack = rootView.findViewById(R.id.iv_back);
+
+    BottomNavigationView bottomNavigationView = requireActivity().findViewById(R.id.bottomNavigationView);
+    int selectedItemId = R.id.profile;
+
+    bottomNavigationView.setSelectedItemId(selectedItemId);
+
+
+    ivBack.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        requireActivity().getSupportFragmentManager().popBackStack();
+
+      }
+    });
+
+    ivMore.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        Log.d("TAG", "onClick: ");
+        PopupMenu popupMenu = new PopupMenu(getContext(), ivMore);
+        popupMenu.getMenuInflater().inflate(R.menu.header_menu, popupMenu.getMenu());
+        popupMenu.show();
+        popupMenu.setOnMenuItemClickListener(item -> {
+          if(item.getItemId() == R.id.action_exit_app){
+            if (getActivity() != null) {
+              getActivity().finish();
+            }
+          }
+          return false;
+        });
+
+      }
+    });
+    llChangeInformation.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        ChangeInformationFragment changeInformationFragment = new ChangeInformationFragment();
+        FragmentTransaction fragmentTransaction = getParentFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.flFragment, changeInformationFragment);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
+      }
+    });
+
+
+    return rootView;
   }
 }

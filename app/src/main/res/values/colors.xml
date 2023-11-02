@@ -1,5 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+  <color name="black">#FF000000</color>
+  <color name="white">#FFFFFFFF</color>
+  <color name="primary1">#101010</color>
+  <color name="primary2">#404040</color>
+  <color name="primary3">#707070</color>
+  <color name="primary4">#9F9F9F</color>
+  <color name="primary5">#E7E7E7</color>
+  <color name="secondary1">#797979</color>
+  <color name="secondary2">#949494</color>
+  <color name="secondary3">#AFAFAF</color>
+  <color name="secondary4">#C9C9C9</color>
+  <color name="secondary5">#F2F2F2</color>
+
+  <color name="success">#4ADE80</color>
+  <color name="warning">#FACC15</color>
+  <color name="error">#F75555</color>
+  <color name="info">#246BFD</color>
+  <color name="disabled">#D8D8D8</color>
+  <color name="disabledButton">#393939</color>
+
+  <color name="greyscale900">#212121</color>
+  <color name="greyscale800">#424242</color>
+  <color name="greyscale700">#616161</color>
+  <color name="greyscale600">#757575</color>
+  <color name="greyscale500">#9E9E9E</color>
+  <color name="greyscale400">#BDBDBD</color>
+  <color name="greyscale300">#E0E0E0</color>
+  <color name="greyscale200">#EEEEEE</color>
+  <color name="greyscale100">#F5F5F5</color>
+  <color name="greyscale50">#FAFAFA</color>
+
+  <color name="backgroundSliver">#F3F3F3</color>
+  <color name="backgroundPurple">#F4ECFF</color>
+  <color name="backgroundBlue">#F6FAFD</color>
+  <color name="backgroundGreen">#F2FFFC</color>
+  <color name="backgroundYellow">#FFFEE0</color>
+  <color name="backgroundOrange">#FFF8ED</color>
+  <color name="backgroundPink">#FFF5F5</color>
+
+  <color name="transparentSliver">#14101010</color>
+  <color name="transparentPurple">#147210FF</color>
+  <color name="transparentBlue">#14335EF7</color>
+  <color name="transparentGreen">#144CAF50</color>
+  <color name="transparentYellow">#14FACC15</color>
+  <color name="transparentOrange">#14FF9800</color>
+  <color name="transparentPink">#14F75555</color>
+
+
+
 </resources>

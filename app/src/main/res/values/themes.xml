@@ -2,7 +2,9 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.PRM_AutoPartsSale" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Font -->
+        <item name="fontFamily">@font/nunito_medium</item>
+
         <!-- Primary brand color. -->
         <item name="colorPrimary">#101010</item>
         <item name="colorPrimaryVariant">#404040</item>
