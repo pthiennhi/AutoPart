@@ -63,6 +63,7 @@ public class CategoryFragment extends Fragment {
 
     bottomNavigationView.setSelectedItemId(selectedItemId);
 
+
     return view;
   }
 }

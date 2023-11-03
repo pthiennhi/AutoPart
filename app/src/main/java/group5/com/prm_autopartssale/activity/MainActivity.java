@@ -11,15 +11,21 @@ import com.google.android.material.navigation.NavigationBarView.OnItemSelectedLi
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import group5.com.prm_autopartssale.R;
+import group5.com.prm_autopartssale.api.ApiService;
 import group5.com.prm_autopartssale.fragment.CategoryFragment;
 import group5.com.prm_autopartssale.fragment.HomeFragment;
 import group5.com.prm_autopartssale.fragment.NotificationFragment;
 import group5.com.prm_autopartssale.fragment.OrderFragment;
 import group5.com.prm_autopartssale.fragment.ProfileFragment;
+import group5.com.prm_autopartssale.models.Customer;
+import group5.com.prm_autopartssale.models.DataContainer;
+import retrofit2.Call;
+import retrofit2.Retrofit;
 
 
 public class MainActivity extends AppCompatActivity {
 
+  ApiService apiService;
   BottomNavigationView bottomNavigationView;
 
   HomeFragment homeFragment = new HomeFragment();
@@ -34,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
 
   private int selectedItemId = R.id.home;
 
+  Customer customer = new Customer();
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -43,6 +51,28 @@ public class MainActivity extends AppCompatActivity {
     DatabaseReference myRef = database.getReference("message");
 
     myRef.setValue("Hello, World!");
+    Retrofit retrofit = new Retrofit.Builder()
+        .baseUrl("https://swd-six.vercel.app/api/")
+        .addConverterFactory(retrofit2.converter.gson.GsonConverterFactory.create())
+        .build();
+
+    apiService = retrofit.create(ApiService.class);
+    
+    Call<Customer> customerCall = apiService.getCustomer("2");
+    
+    customerCall.enqueue(new retrofit2.Callback<Customer>() {
+      @Override
+      public void onResponse(Call<Customer> call, retrofit2.Response<Customer> response) {
+        customer = response.body();
+        DataContainer dataContainer = DataContainer.getInstance();
+        dataContainer.setCustomer(customer);
+      }
+
+      @Override
+      public void onFailure(Call<Customer> call, Throwable t) {
+
+      }
+    });
 
     bottomNavigationView = findViewById(R.id.bottomNavigationView);
     bottomNavigationView.setOnItemSelectedListener(new OnItemSelectedListener() {
@@ -95,6 +125,7 @@ public class MainActivity extends AppCompatActivity {
   private void setSelectedNavigationItem(int itemId) {
     bottomNavigationView.setSelectedItemId(itemId);
   }
+
   private int getNavItemForFragment(Fragment fragment) {
     if (fragment instanceof HomeFragment) {
       return R.id.home;
@@ -109,10 +140,6 @@ public class MainActivity extends AppCompatActivity {
     }
     return R.id.home; // Default item
   }
-
-
-
-
 
 
 }

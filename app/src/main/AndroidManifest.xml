@@ -13,9 +13,7 @@
     android:theme="@style/Theme.PRM_AutoPartsSale"
     tools:targetApi="34">
     <activity
-      android:exported="false"
-      android:name=".activity.profile.ChangeProfileActivity" />
-    <activity
+      android:windowSoftInputMode="adjustResize"
       android:exported="true"
       android:name=".activity.MainActivity">
       <intent-filter>

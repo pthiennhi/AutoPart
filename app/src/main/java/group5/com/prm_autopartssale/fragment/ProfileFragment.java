@@ -15,7 +15,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import group5.com.prm_autopartssale.R;
+import group5.com.prm_autopartssale.fragment.profile.ChangeAddressFragment;
 import group5.com.prm_autopartssale.fragment.profile.ChangeInformationFragment;
+import group5.com.prm_autopartssale.fragment.profile.HelpCenterFragment;
 import java.io.Console;
 
 /**
@@ -24,7 +26,7 @@ import java.io.Console;
  */
 public class ProfileFragment extends Fragment {
 
-  LinearLayout llChangeInformation;
+  LinearLayout llChangeInformation, llChangAddress, llNoification, llOrderHistory, llPrivacyPolicy, llHelpCenter, llLogout;
   ImageView ivBack, ivMore;
 
   // TODO: Rename parameter arguments, choose names that match
@@ -73,6 +75,12 @@ public class ProfileFragment extends Fragment {
     View rootView = inflater.inflate(R.layout.fragment_profile, container, false);
 
     llChangeInformation = rootView.findViewById(R.id.ll_change_information);
+    llChangAddress = rootView.findViewById(R.id.ll_change_address);
+    llNoification = rootView.findViewById(R.id.ll_notification);
+    llOrderHistory = rootView.findViewById(R.id.ll_order_history);
+    llPrivacyPolicy = rootView.findViewById(R.id.ll_privacy_policy);
+    llHelpCenter = rootView.findViewById(R.id.ll_help_center);
+    llLogout = rootView.findViewById(R.id.ll_logout);
     ivMore = rootView.findViewById(R.id.iv_more);
     ivBack = rootView.findViewById(R.id.iv_back);
 
@@ -114,6 +122,28 @@ public class ProfileFragment extends Fragment {
         ChangeInformationFragment changeInformationFragment = new ChangeInformationFragment();
         FragmentTransaction fragmentTransaction = getParentFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.flFragment, changeInformationFragment);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
+      }
+    });
+
+    llChangAddress.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        ChangeAddressFragment changeAddressFragment = new ChangeAddressFragment();
+        FragmentTransaction fragmentTransaction = getParentFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.flFragment, changeAddressFragment);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
+      }
+    });
+
+    llHelpCenter.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        HelpCenterFragment helpCenterFragment = new HelpCenterFragment();
+        FragmentTransaction fragmentTransaction = getParentFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.flFragment, helpCenterFragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
       }

@@ -1,7 +1,12 @@
 package group5.com.prm_autopartssale.fragment.profile;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.PopupMenu;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,19 +18,21 @@ import group5.com.prm_autopartssale.fragment.HomeFragment;
 import group5.com.prm_autopartssale.fragment.NotificationFragment;
 import group5.com.prm_autopartssale.fragment.OrderFragment;
 import group5.com.prm_autopartssale.fragment.ProfileFragment;
+import group5.com.prm_autopartssale.models.Customer;
+import group5.com.prm_autopartssale.models.DataContainer;
 
 /**
  * A simple {@link Fragment} subclass. Use the {@link ChangeInformationFragment#newInstance} factory
  * method to create an instance of this fragment.
  */
 public class ChangeInformationFragment extends Fragment {
-  ImageView ivBack;
+  ImageView ivBack, ivMore;
+  EditText edtName, edtPhone;
+  Button btnChange;
 
-  private static final String ARG_PARAM1 = "param1";
-  private static final String ARG_PARAM2 = "param2";
+  Customer customer;
 
-  private String mParam1;
-  private String mParam2;
+
 
   public ChangeInformationFragment() {
     // Required empty public constructor
@@ -34,20 +41,14 @@ public class ChangeInformationFragment extends Fragment {
 
   public static ChangeInformationFragment newInstance(String param1, String param2) {
     ChangeInformationFragment fragment = new ChangeInformationFragment();
-    Bundle args = new Bundle();
-    args.putString(ARG_PARAM1, param1);
-    args.putString(ARG_PARAM2, param2);
-    fragment.setArguments(args);
+
     return fragment;
   }
 
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    if (getArguments() != null) {
-      mParam1 = getArguments().getString(ARG_PARAM1);
-      mParam2 = getArguments().getString(ARG_PARAM2);
-    }
+
   }
 
   @Override
@@ -55,12 +56,44 @@ public class ChangeInformationFragment extends Fragment {
       Bundle savedInstanceState) {
     View view = inflater.inflate(R.layout.fragment_change_information, container, false);
     ivBack = view.findViewById(R.id.iv_back);
+    ivMore = view.findViewById(R.id.iv_more);
+    edtName = view.findViewById(R.id.edtName);
+    edtPhone = view.findViewById(R.id.edtPhone);
+    btnChange = view.findViewById(R.id.btnChange);
+
+    DataContainer dataContainer = DataContainer.getInstance();
+    customer = dataContainer.getCustomer();
+    edtName.setText(customer.getName());
+    edtPhone.setText(customer.getPhone_number());
     ivBack.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
         if(requireActivity().getSupportFragmentManager().getBackStackEntryCount() > 0){
           requireActivity().getSupportFragmentManager().popBackStack();
         }
+      }
+    });
+    ivMore.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        PopupMenu popupMenu = new PopupMenu(getContext(), ivMore);
+        popupMenu.getMenuInflater().inflate(R.menu.header_menu, popupMenu.getMenu());
+        popupMenu.show();
+        popupMenu.setOnMenuItemClickListener(item -> {
+          if(item.getItemId() == R.id.action_exit_app){
+            if (getActivity() != null) {
+              getActivity().finish();
+            }
+          }
+          return false;
+        });
+
+      }
+    });
+    btnChange.setOnClickListener(new OnClickListener() {
+      @Override
+      public void onClick(View v) {
+
       }
     });
 

@@ -89,9 +89,9 @@
         android:background="@drawable/background_group_item_profile"
         android:orientation="vertical">
         <LinearLayout
+          android:id="@+id/ll_change_information"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:background="@drawable/background_item_profile"
           android:padding="10dp"
           android:clickable="true"
           android:focusable="true"
@@ -99,7 +99,6 @@
           android:orientation="horizontal">
 
           <LinearLayout
-            android:id="@+id/ll_change_information"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -127,6 +126,10 @@
 
         </LinearLayout>
         <LinearLayout
+          android:id="@+id/ll_change_address"
+          android:clickable="true"
+          android:focusable="true"
+          android:focusableInTouchMode="true"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:padding="10dp"
@@ -159,6 +162,10 @@
 
         </LinearLayout>
         <LinearLayout
+          android:id="@+id/ll_notification"
+          android:clickable="true"
+          android:focusable="true"
+          android:focusableInTouchMode="true"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:padding="10dp"
@@ -192,6 +199,10 @@
 
         </LinearLayout>
         <LinearLayout
+          android:id="@+id/ll_order_history"
+          android:clickable="true"
+          android:focusable="true"
+          android:focusableInTouchMode="true"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:padding="10dp"
@@ -231,6 +242,10 @@
         android:background="@drawable/background_group_item_profile"
         android:orientation="vertical">
         <LinearLayout
+          android:id="@+id/ll_privacy_policy"
+          android:clickable="true"
+          android:focusable="true"
+          android:focusableInTouchMode="true"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:padding="10dp"
@@ -262,6 +277,10 @@
 
         </LinearLayout>
         <LinearLayout
+          android:id="@+id/ll_help_center"
+          android:clickable="true"
+          android:focusable="true"
+          android:focusableInTouchMode="true"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:layout_marginTop="20dp"
@@ -303,6 +322,10 @@
         android:background="@drawable/background_group_item_profile"
         android:orientation="vertical">
         <LinearLayout
+          android:id="@+id/ll_logout"
+          android:clickable="true"
+          android:focusable="true"
+          android:focusableInTouchMode="true"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:padding="10dp"
