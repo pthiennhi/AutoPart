@@ -2,111 +2,18 @@
   <string name="app_name">PRM_AutoPartsSale</string>
   <!-- TODO: Remove or change this placeholder text -->
   <string name="hello_blank_fragment">Hello blank fragment</string>
-  <string name="helpCeterTitle1">AutoPart là gì?</string>
-  <string name="helCenterSubtile1">AutoPart là ứng dụng mua sắm tiện lợi và đáng tin cậy dành cho những người yêu xe ô tô. Với AutoPart, bạn có thể dễ dàng tìm kiếm và mua các phụ tùng ô tô chất lượng từ các nhà sản xuất uy tín, đồng thời tận hưởng trải nghiệm mua sắm trực tuyến an toàn và thuận tiện.</string>
-
-  <string-array name="city">
-    <item>Chọn tỉnh thành</item>
-    <item>Hà Nội</item>
-    <item>Hồ Chí Minh</item>
-    <item>Đà Nẵng</item>
-    <item>Hải Phòng</item>
-    <item>Cần Thơ</item>
-    <item>Biên Hòa</item>
-    <item>Nha Trang</item>
-    <item>Buôn Ma Thuột</item>
-    <item>Quy Nhơn</item>
-    <item>Vũng Tàu</item>
-    <item>Phan Thiết</item>
-    <item>Long Xuyên</item>
-    <item>Thái Nguyên</item>
-    <item>Bắc Giang</item>
-    <item>Bắc Ninh</item>
-    <item>Bến Tre</item>
-    <item>Bình Dương</item>
-    <item>Bình Phước</item>
-    <item>Bình Thuận</item>
-    <item>Cà Mau</item>
-    <item>Cao Bằng</item>
-    <item>Đắk Lắk</item>
-    <item>Đắk Nông</item>
-    <item>Điện Biên</item>
-    <item>Đồng Nai</item>
-    <item>Đồng Tháp</item>
-    <item>Gia Lai</item>
-    <item>Hà Giang</item>
-    <item>Hà Nam</item>
-    <item>Hà Tĩnh</item>
-    <item>Hải Dương</item>
-    <item>Hậu Giang</item>
-    <item>Hòa Bình</item>
-    <item>Hưng Yên</item>
-    <item>Khánh Hòa</item>
-    <item>Kiên Giang</item>
-    <item>Kon Tum</item>
-    <item>Lai Châu</item>
-    <item>Lâm Đồng</item>
-    <item>Lạng Sơn</item>
-    <item>Lào Cai</item>
-    <item>Nam Định</item>
-    <item>Nghệ An</item>
-    <item>Ninh Bình</item>
-    <item>Ninh Thuận</item>
-    <item>Phú Thọ</item>
-    <item>Quảng Bình</item>
-    <item>Quảng Nam</item>
-    <item>Quảng Ngãi</item>
-    <item>Quảng Ninh</item>
-    <item>Quảng Trị</item>
-    <item>Sóc Trăng</item>
-    <item>Sơn La</item>
-    <item>Tây Ninh</item>
-    <item>Thái Bình</item>
-    <item>Thái Nguyên</item>
-    <item>Thanh Hóa</item>
-  </string-array>
-  <string-array name="default_district">
-    <item>Chọn quận huyện</item>
-  </string-array>
-
-  <string-array name="select_district">
-    <item>Quận Ba Đình</item>
-    <item>Quận Hoàn Kiếm</item>
-    <item>Quận Tây Hồ</item>
-    <item>Quận Long Biên</item>
-    <item>Quận Cầu Giấy</item>
-    <item>Quận Đống Đa</item>
-    <item>Quận Hai Bà Trưng</item>
-    <item>Quận Hoàng Mai</item>
-    <item>Quận Thanh Xuân</item>
-    <item>Huyện Sóc Sơn</item>
-    <item>Huyện Đông Anh</item>
-    <item>Huyện Gia Lâm</item>
-    <item>Huyện Từ Liêm</item>
-    <item>Huyện Thanh Trì</item>
-    <item>Quận Hà Đông</item>
-    <item>Thị xã Sơn Tây</item>
-    <item>Huyện Ba Vì</item>
-    <item>Huyện Phúc Thọ</item>
-    <item>Huyện Đan Phượng</item>
-    <item>Huyện Hoài Đức</item>
-    <item>Huyện Quốc Oai</item>
-    <item>Huyện Thạch Thất</item>
-    <item>Huyện Chương Mỹ</item>
-    <item>Huyện Thanh Oai</item>
-    <item>Huyện Thường Tín</item>
-    <item>Huyện Phú Xuyên</item>
-    <item>Huyện Ứng Hòa</item>
-    <item>Huyện Mỹ Đức</item>
-    <item>Quận Nam Từ Liêm</item>
-    <item>Huyện Hà Giang</item>
-    <item>Huyện Đồng Văn</item>
-    <item>Huyện Mèo Vạc</item>
-    <item>Huyện Yên Minh</item>
-    <item>Huyện Quản Bạ</item>
-    <item>Huyện Vị Xuyên</item>
-    <item>Huyện Bắc Mê</item>
-  </string-array>
+  <string name="helpCenterTitle1">AutoPart là gì?</string>
+  <string name="helpCenterSubtitle1">AutoPart là ứng dụng mua sắm tiện lợi và đáng tin cậy dành cho những người yêu xe ô tô. Với AutoPart, bạn có thể dễ dàng tìm kiếm và mua các phụ tùng ô tô chất lượng từ các nhà sản xuất uy tín, đồng thời tận hưởng trải nghiệm mua sắm trực tuyến an toàn và thuận tiện.</string>
+  <string name="helpCenterSubtitle2">1.Đăng Nhập Hoặc Đăng Ký Tài Khoản:\n\nNếu bạn đã có tài khoản trên AutoPart, đăng nhập bằng thông tin đăng nhập của mình. Nếu chưa, bạn cần đăng ký một tài khoản mới bằng cách cung cấp thông tin cần thiết.\n\n\n2.Tìm Kiếm Phụ Tùng Ô Tô:\n\nSử dụng tính năng tìm kiếm trên ứng dụng AutoPart để tìm kiếm các phụ tùng ô tô mà bạn cần. Bạn có thể tìm kiếm bằng tên phụ tùng, thương hiệu xe, hoặc các tiêu chí khác.\n\n\n3.Chọn Sản Phẩm:\n\nSau khi tìm thấy sản phẩm mà bạn muốn mua, bấm vào nó để xem thông tin chi tiết và mô tả sản phẩm.\n\n\n4.Thêm Vào Giỏ Hàng:\n\nTrên trang sản phẩm, bạn sẽ thấy một nút \"Thêm vào giỏ hàng\" hoặc tương tự. Bấm vào nút này để đưa sản phẩm vào giỏ hàng của bạn.\n\n\n5.Kiểm Tra Giỏ Hàng:\n\nKhi bạn đã chọn tất cả các sản phẩm mà bạn muốn mua, hãy chuyển đến trang giỏ hàng. Ở đây, bạn có thể xem lại danh sách sản phẩm, số lượng, và tổng cộng của đơn hàng.\n\n\n6.Chọn Phương Thức Thanh Toán:\n\nChọn phương thức thanh toán phù hợp với bạn, ví dụ như thanh toán bằng VNPAY.\n\n\n7.Xác Nhận Đơn Hàng:\n\nXác nhận đơn hàng của bạn bằng cách kiểm tra lại thông tin đặt hàng, địa chỉ giao hàng, và phương thức thanh toán. Đảm bảo rằng mọi thông tin đều chính xác.\n\n\n8.Hoàn Tất Đặt Hàng:\n\n Bạn sẽ nhận được một xác nhận đặt hàng qua thông báo trên ứng dụng.\n\n\n9.Theo Dõi Đơn Hàng:\n\nSau khi đặt hàng, bạn có thể theo dõi tình trạng của đơn hàng qua tài khoản của mình trên AutoPart.</string>
+  <string name="helpCenterTitle2">Làm sao để đặt hàng?</string>
+  <string name="helpCenterTitle3">Làm sao để huỷ đơn hàng?</string>
+  <string name="helCenterSubtitle3">1.Đăng Nhập vào Tài Khoản Của Bạn:\n\nTrước tiên, bạn cần đăng nhập vào tài khoản của mình trên ứng dụng AutoPart bằng thông tin đăng nhập của bạn.\n\n\n2.Tìm Đơn Hàng Cần Huỷ:\n\nSau khi đăng nhập, hãy tìm đến mục \"Lịch sử đơn hàng\" hoặc tương tự trong tài khoản của bạn. Tại đây, bạn sẽ thấy danh sách các đơn hàng đã đặt.\n\n\n\n3.Chọn Đơn Hàng Cần Huỷ:\n\nBấm vào đơn hàng mà bạn muốn huỷ. Bạn sẽ thấy thông tin chi tiết về đơn hàng này.\n\n\n\n4.Chọn Tùy Chọn Huỷ Đơn Hàng:\n\nTrong trang thông tin đơn hàng, bạn sẽ thấy một tùy chọn hoặc nút cho việc huỷ đơn hàng. Bấm vào tùy chọn này.\n\n\n\n5.Theo Dõi Trạng Thái Huỷ Đơn Hàng:\n\nSau khi bạn đã gửi yêu cầu huỷ đơn hàng, bạn có thể theo dõi trạng thái yêu cầu trên tài khoản của mình. AutoPart có thể cung cấp thông tin về việc xử lý yêu cầu huỷ đơn hàng, bao gồm việc hoàn tiền (nếu thích hợp).</string>
+  <string name="privacyTitle1">1. Các loại thông tin được thu thập</string>
+  <string name="privacySubitle1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+  <string name="privacyTitle2">2. Sử dụng dữ liệu cá nhân</string>
+  <string name="privacySubitle2">Magna etiam tempor orci eu lobortis elementum nibh. Vulputate enim nulla aliquet porttitor lacus. Orci sagittis eu volutpat odio. Cras semper auctor neque vitae tempus quam pellentesque nec. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Commodo elit at imperdiet dui. Nisi vitae suscipit tellus mauris a diam. Erat pellentesque adipiscing commodo elit at imperdiet dui. Mi ipsum faucibus vitae aliquet nec ullamcorper. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et.</string>
+  <string name="privacyTitle3">3. Tiết lộ dữ liệu cá nhân</string>
+  <string name="privacySubitle3">Consequat id porta nibh venenatis cras sed. Ipsum nunc aliquet bibendum enim facilisis gravida neque. Nibh tellus molestie nunc non blandit massa. Quam pellentesque nec nam aliquam sem et tortor consequat id. Faucibus vitae aliquet nec ullamcorper sit amet risus. Nunc consequat interdum varius sit amet. Eget magna fermentum iaculis eu non diam phasellus vestibulum. Pulvinar pellentesque habitant morbi tristique senectus et. Lorem donec massa sapien faucibus et molestie. Massa tempor nec feugiat nisl pretium fusce id. Lacinia at quis risus sed vulputate odio. Integer vitae justo eget magna fermentum iaculis. Eget gravida cum sociis natoque penatibus et magnis.</string>
 
 
 </resources>

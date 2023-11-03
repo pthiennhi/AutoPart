@@ -6,6 +6,7 @@ import android.os.Debug;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -18,6 +19,7 @@ import group5.com.prm_autopartssale.R;
 import group5.com.prm_autopartssale.fragment.profile.ChangeAddressFragment;
 import group5.com.prm_autopartssale.fragment.profile.ChangeInformationFragment;
 import group5.com.prm_autopartssale.fragment.profile.HelpCenterFragment;
+import group5.com.prm_autopartssale.fragment.profile.PrivacyPolicyFragment;
 import java.io.Console;
 
 /**
@@ -144,6 +146,17 @@ public class ProfileFragment extends Fragment {
         HelpCenterFragment helpCenterFragment = new HelpCenterFragment();
         FragmentTransaction fragmentTransaction = getParentFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.flFragment, helpCenterFragment);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
+      }
+    });
+
+    llPrivacyPolicy.setOnClickListener(new OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        PrivacyPolicyFragment privacyPolicyFragment = new PrivacyPolicyFragment();
+        FragmentTransaction fragmentTransaction = getParentFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.flFragment, privacyPolicyFragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
       }

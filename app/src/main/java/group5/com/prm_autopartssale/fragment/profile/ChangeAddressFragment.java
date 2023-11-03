@@ -2,6 +2,7 @@ package group5.com.prm_autopartssale.fragment.profile;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -15,13 +16,16 @@ import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 import androidx.fragment.app.Fragment;
 import group5.com.prm_autopartssale.R;
 import group5.com.prm_autopartssale.api.ApiService;
 import group5.com.prm_autopartssale.models.City;
 import group5.com.prm_autopartssale.models.Customer;
+import group5.com.prm_autopartssale.models.CustomerUpdateRequest;
 import group5.com.prm_autopartssale.models.DataContainer;
 import group5.com.prm_autopartssale.models.District;
+import group5.com.prm_autopartssale.models.ResponseMessage;
 import group5.com.prm_autopartssale.models.Ward;
 import java.util.ArrayList;
 import java.util.List;
@@ -46,7 +50,7 @@ public class ChangeAddressFragment extends Fragment {
   List<City> cities;
   List<District> districts;
   List<Ward> wards;
-  int cityCode = 67, districtCode = 1, wardCode = 1;
+  int cityCode = 1 , districtCode = 1, wardCode = 1;
 
 
   public ChangeAddressFragment() {
@@ -93,7 +97,13 @@ public class ChangeAddressFragment extends Fragment {
         .addConverterFactory(retrofit2.converter.gson.GsonConverterFactory.create())
         .build();
 
+    Retrofit retrofitServer = new Retrofit.Builder()
+        .baseUrl("https://swd-six.vercel.app/api/")
+        .addConverterFactory(retrofit2.converter.gson.GsonConverterFactory.create())
+        .build();
+
     apiService = retrofit.create(ApiService.class);
+
 
     Call<List<City>> call = apiService.getCities();
 
@@ -236,8 +246,10 @@ public class ChangeAddressFragment extends Fragment {
     btnChange.setOnClickListener(new OnClickListener() {
       @Override
       public void onClick(View v) {
+        apiService = retrofitServer.create(ApiService.class);
         String nameAddress = edtNameAdress.getText().toString();
         String addressDetail = edtAddressDetail.getText().toString();
+
         if(nameAddress.isEmpty()){
           edtNameAdress.setError("Name address is required");
           edtNameAdress.requestFocus();
@@ -248,6 +260,64 @@ public class ChangeAddressFragment extends Fragment {
           edtAddressDetail.requestFocus();
           return;
         }
+        CustomerUpdateRequest updateRequest = new CustomerUpdateRequest();
+        updateRequest.setAddress_name(nameAddress);
+        updateRequest.setAddress_details(addressDetail);
+        updateRequest.setCity_code(cityCode);
+        updateRequest.setDistrict_code(districtCode);
+        updateRequest.setWard_code(wardCode);
+        Call<ResponseMessage> customerCall1 = apiService.updateCustomer(customer.getId(), updateRequest);
+        customerCall1.enqueue(new retrofit2.Callback<ResponseMessage>() {
+          @Override
+          public void onResponse(Call<ResponseMessage> call, retrofit2.Response<ResponseMessage> response) {
+            String message = response.body().getMessage();
+            Log.d("CC", response.toString());
+            if(response.isSuccessful()){
+              LayoutInflater inflater = getLayoutInflater();
+              View layout = inflater.inflate(R.layout.custom_toast, null);
+              ImageView toastImage = (ImageView) layout.findViewById(R.id.toast_image);
+              TextView toastText = (TextView) layout.findViewById(R.id.toast_text);
+              toastImage.setImageResource(R.drawable.ic_check_circle);
+              toastText.setText(message);
+              Toast toast = new Toast(requireActivity().getApplicationContext());
+              toast.setGravity(Gravity.TOP, 0, 0);
+              toast.setDuration(Toast.LENGTH_LONG);
+              toast.setView(layout);
+              toast.show();
+
+              Call<Customer> customerCall2 = apiService.getCustomer(customer.getId());
+              customerCall2.enqueue(new retrofit2.Callback<Customer>() {
+                @Override
+                public void onResponse(Call<Customer> call, retrofit2.Response<Customer> response) {
+                  customer = response.body();
+                  DataContainer dataContainer = DataContainer.getInstance();
+                  dataContainer.setCustomer(customer);
+                }
+
+                @Override
+                public void onFailure(Call<Customer> call, Throwable t) {
+                  Log.d("UpdateCustomerError", "Update failed1: " + t.getMessage());
+                  Toast.makeText(getContext(), "Update failed", Toast.LENGTH_SHORT).show();
+
+                }
+              });
+              if(requireActivity().getSupportFragmentManager().getBackStackEntryCount() > 0){
+                requireActivity().getSupportFragmentManager().popBackStack();
+              }
+            }
+            else {
+              Log.d("UpdateCustomerError", "Update failed2: " + message);
+              Toast.makeText(getContext(), "Update failed", Toast.LENGTH_SHORT).show();
+            }
+          }
+
+          @Override
+          public void onFailure(Call<ResponseMessage> call, Throwable t) {
+            Log.d("UpdateCustomerError", "Update failed3: " + t.getMessage());
+            Toast.makeText(getContext(), "Update failed", Toast.LENGTH_SHORT).show();
+
+          }
+        });
 
 
       }

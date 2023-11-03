@@ -88,7 +88,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:text="@string/helpCeterTitle1"
+                android:text="@string/helpCenterTitle1"
                 android:textSize="18sp"
                 android:textStyle="bold" />
               <ImageView
@@ -109,7 +109,126 @@
               android:visibility="gone"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:text="@string/helCenterSubtile1"
+              android:text="@string/helpCenterSubtitle1"
+              android:textSize="14sp"
+              android:layout_marginTop="16dp"
+              />
+
+
+
+
+
+          </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+          android:id="@+id/expandCard2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:cardCornerRadius="20dp"
+          app:contentPadding="24dp"
+          android:layout_marginTop="24dp"
+          app:cardElevation="0dp"
+          app:cardBackgroundColor="@color/greyscale50"
+          >
+          <LinearLayout
+            android:id="@+id/ll_helpCenter2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:gravity="center_vertical|center_horizontal"
+              >
+              <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/helpCenterTitle2"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+              <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/ic_chervon_down" />
+            </LinearLayout>
+            <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/greyscale200"
+              android:layout_marginTop="16dp"
+              />
+
+            <TextView
+              android:id="@+id/tv_helpCenterSubtile2"
+              android:visibility="gone"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/helpCenterSubtitle2"
+              android:textSize="14sp"
+              android:layout_marginTop="16dp"
+              />
+
+
+
+
+
+          </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+          android:id="@+id/expandCard3"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="24dp"
+          app:cardCornerRadius="20dp"
+          app:contentPadding="24dp"
+          app:cardElevation="0dp"
+          app:cardBackgroundColor="@color/greyscale50"
+          >
+          <LinearLayout
+            android:id="@+id/ll_helpCenter3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:gravity="center_vertical|center_horizontal"
+              >
+              <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/helpCenterTitle3"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+              <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/ic_chervon_down" />
+            </LinearLayout>
+            <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/greyscale200"
+              android:layout_marginTop="16dp"
+              />
+
+            <TextView
+              android:id="@+id/tv_helpCenterSubtile3"
+              android:visibility="gone"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/helCenterSubtitle3"
               android:textSize="14sp"
               android:layout_marginTop="16dp"
               />

@@ -3,12 +3,119 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
+  android:background="@color/white"
   tools:context=".fragment.profile.PrivacyPolicyFragment">
 
   <!-- TODO: Update blank fragment layout -->
-  <TextView
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:paddingHorizontal="24dp"
+      android:paddingVertical="12dp">
+
+
+      <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+          android:id="@+id/iv_back"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="12dp"
+          android:src="@drawable/ic_arrow_left" />
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Trung tâm trợ giúp"
+          android:textSize="20sp" />
+
+      </LinearLayout>
+      <ImageView
+        android:id="@+id/iv_more"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_more_circle" />
+
+    </LinearLayout>
+
+  </RelativeLayout>
+  <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:text="@string/hello_blank_fragment" />
+    android:layout_marginTop="56dp"
+    android:orientation="vertical">
+    <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      >
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:orientation="vertical">
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/privacyTitle1"
+          android:textStyle="bold"
+          android:textSize="20sp"
+          />
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/privacySubitle1"
+          android:textSize="16sp"
+          android:layout_marginTop="24dp"
+          />
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/privacyTitle2"
+          android:textStyle="bold"
+          android:textSize="20sp"
+          android:layout_marginTop="24dp"
+          />
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/privacySubitle2"
+          android:textSize="16sp"
+          android:layout_marginTop="24dp"
+          />
+
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/privacyTitle3"
+          android:textStyle="bold"
+          android:textSize="20sp"
+          android:layout_marginTop="24dp"
+          />
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/privacySubitle3"
+          android:textSize="16sp"
+          android:layout_marginTop="24dp"
+          />
+
+
+
+
+
+
+      </LinearLayout>
+    </ScrollView>
+
+  </LinearLayout>
 
 </FrameLayout>

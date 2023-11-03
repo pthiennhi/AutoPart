@@ -2,10 +2,13 @@ package group5.com.prm_autopartssale.api;
 
 import group5.com.prm_autopartssale.models.City;
 import group5.com.prm_autopartssale.models.Customer;
+import group5.com.prm_autopartssale.models.CustomerUpdateRequest;
 import group5.com.prm_autopartssale.models.District;
+import group5.com.prm_autopartssale.models.ResponseMessage;
 import group5.com.prm_autopartssale.models.Ward;
 import java.util.List;
 import retrofit2.Call;
+import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.PUT;
 import retrofit2.http.Path;
@@ -17,7 +20,7 @@ public interface ApiService {
   @GET("customer/{id}")
   Call<Customer> getCustomer(@Path("id") String id);
   @PUT("customer/{id}")
-  Call<Customer> updateCustomer(@Path("id") String id, @Query("name") String name, @Query("phone") String phone, @Query("address") String address, @Query("city") int city, @Query("district") int district, @Query("ward") int ward);
+  Call<ResponseMessage> updateCustomer(@Path("id") String id, @Body CustomerUpdateRequest updateRequest);
 
   //  City
   @GET("p/")
