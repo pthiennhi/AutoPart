@@ -31,6 +31,10 @@
   <color name="greyscale100">#F5F5F5</color>
   <color name="greyscale50">#FAFAFA</color>
 
+  <color name="purple">#7210FF</color>
+  <color name="blue">#00BCD4</color>
+  <color name="orange">#FF9800</color>
+
   <color name="backgroundSliver">#F3F3F3</color>
   <color name="backgroundPurple">#F4ECFF</color>
   <color name="backgroundBlue">#F6FAFD</color>

@@ -23,6 +23,10 @@
         <item name="switchStyle">@style/Widget.Material3.CompoundButton.MaterialSwitch</item>
 
     </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
 
     <style name="Theme.PRM_AutoPartsSale" parent="Base.Theme.PRM_AutoPartsSale" />
 </resources>

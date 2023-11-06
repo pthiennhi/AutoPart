@@ -1,15 +1,19 @@
 package group5.com.prm_autopartssale.fragment;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Debug;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.LinearLayout.LayoutParams;
 import android.widget.PopupMenu;
 import android.widget.Toast;
 import androidx.fragment.app.Fragment;
@@ -19,6 +23,7 @@ import group5.com.prm_autopartssale.R;
 import group5.com.prm_autopartssale.fragment.profile.ChangeAddressFragment;
 import group5.com.prm_autopartssale.fragment.profile.ChangeInformationFragment;
 import group5.com.prm_autopartssale.fragment.profile.HelpCenterFragment;
+import group5.com.prm_autopartssale.fragment.profile.OrderHistoryFragment;
 import group5.com.prm_autopartssale.fragment.profile.PrivacyPolicyFragment;
 import java.io.Console;
 
@@ -162,7 +167,64 @@ public class ProfileFragment extends Fragment {
       }
     });
 
+    llLogout.setOnClickListener(new OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        showBottomSheet();
+      }
+    });
+
+    llNoification.setOnClickListener(new OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        NotificationFragment notificationFragment = new NotificationFragment();
+        FragmentTransaction fragmentTransaction = getParentFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.flFragment, notificationFragment);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
+      }
+    });
+
+    llOrderHistory.setOnClickListener(new OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        OrderHistoryFragment orderHistoryFragment = new OrderHistoryFragment();
+        FragmentTransaction fragmentTransaction = getParentFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.flFragment, orderHistoryFragment);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
+      }
+    });
+
 
     return rootView;
+  }
+  private void showBottomSheet() {
+    final Dialog dialog = new Dialog(getContext());
+    dialog.setContentView(R.layout.bottom_sheet_layout);
+
+    Button btnCancel = dialog.findViewById(R.id.btnCancel);
+    Button btnLogout = dialog.findViewById(R.id.btnLogout);
+
+    btnCancel.setOnClickListener(new OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        dialog.dismiss();
+      }
+    });
+
+    btnLogout.setOnClickListener(new OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        //TODO: logout
+        dialog.dismiss();
+      }
+    });
+
+    dialog.show();
+    dialog.getWindow().setLayout(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
+    dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+    dialog.getWindow().getAttributes().windowAnimations= R.style.DialogAnimation;
+    dialog.getWindow().setGravity(Gravity.BOTTOM);
   }
 }

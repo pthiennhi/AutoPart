@@ -2,6 +2,7 @@ package group5.com.prm_autopartssale.activity;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -58,8 +59,9 @@ public class MainActivity extends AppCompatActivity {
 
     apiService = retrofit.create(ApiService.class);
     
-    Call<Customer> customerCall = apiService.getCustomer("2");
-    
+    Call<Customer> customerCall = apiService.getCustomer("1");
+
+
     customerCall.enqueue(new retrofit2.Callback<Customer>() {
       @Override
       public void onResponse(Call<Customer> call, retrofit2.Response<Customer> response) {
@@ -70,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
       @Override
       public void onFailure(Call<Customer> call, Throwable t) {
+        Toast.makeText(MainActivity.this, "Error: " + t.getMessage(), Toast.LENGTH_SHORT).show();
 
       }
     });
@@ -82,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
       }
     });
     bottomNavigationView.setSelectedItemId(R.id.home);
+    replaceFragment(R.id.flFragment, homeFragment);
   }
 
   private boolean handleNavigationItemSelected(int itemId) {

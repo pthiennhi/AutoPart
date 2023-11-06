@@ -4,6 +4,7 @@ import group5.com.prm_autopartssale.models.City;
 import group5.com.prm_autopartssale.models.Customer;
 import group5.com.prm_autopartssale.models.CustomerUpdateRequest;
 import group5.com.prm_autopartssale.models.District;
+import group5.com.prm_autopartssale.models.Notification;
 import group5.com.prm_autopartssale.models.ResponseMessage;
 import group5.com.prm_autopartssale.models.Ward;
 import java.util.List;
@@ -17,9 +18,9 @@ import retrofit2.http.Query;
 public interface ApiService {
 
 //  Customer
-  @GET("customer/{id}")
+  @GET("customers/{id}")
   Call<Customer> getCustomer(@Path("id") String id);
-  @PUT("customer/{id}")
+  @PUT("customers/{id}")
   Call<ResponseMessage> updateCustomer(@Path("id") String id, @Body CustomerUpdateRequest updateRequest);
 
   //  City
@@ -31,6 +32,10 @@ public interface ApiService {
 
   @GET("d/{code}")
   Call<District> getDistrict(@Path("code") int code, @Query("depth") int depth);
+
+  //Notification
+  @GET("customers/{customer_id}/notifications")
+  Call<List<Notification>> getNotifications(@Path("customer_id") String customer_id);
 
 
 }
