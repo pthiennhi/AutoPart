@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="horizontal"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:padding="16dp"
+  android:layout_marginVertical="10dp"
+  android:layout_marginHorizontal="24dp"
+  android:background="@drawable/background_group_item_profile"
+  >
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <ImageView
+      android:id="@+id/iv_thumbnail_item"
+      android:padding="8dp"
+      android:layout_width="120dp"
+      android:layout_height="100dp"
+      android:layout_gravity="top|start"
+      android:background="@drawable/shape_square"
+      android:src="@drawable/profile_image"
+      />
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginTop="6dp"
+      >
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số lượng: "
+        android:textColor="@color/greyscale900"
+        android:textSize="12sp"
+        android:layout_marginRight="2dp"
+        />
+      <TextView
+        android:id="@+id/tv_total_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20 sp"
+        android:textColor="@color/greyscale900"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginRight="14dp"
+        />
+    </LinearLayout>
+  </LinearLayout>
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginStart="16dp"
+    >
+    <TextView
+      android:id="@+id/tv_title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Đơn hàng XB-7683"
+      android:textColor="@color/black"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      />
+    <TextView
+      android:id="@+id/tv_status"
+      android:layout_width="wrap_content"
+      android:paddingHorizontal="10dp"
+      android:paddingVertical="6dp"
+      android:layout_height="wrap_content"
+      android:text="Đã xác nhận"
+      android:textColor="#00B8D4"
+      android:background="@drawable/background_group_item_profile"
+      android:backgroundTint="@color/backgroundBlue"
+      android:textSize="14sp"
+      android:layout_marginTop="6dp"
+      />
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginTop="6dp"
+      >
+      <TextView
+        android:id="@+id/tv_total_price"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="1.028.000đ"
+        android:textColor="@color/greyscale900"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginRight="12dp"
+        />
+      <Button
+        android:id="@+id/btn_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chi tiết"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        />
+    </LinearLayout>
+
+
+  </LinearLayout>
+
+
+
+</LinearLayout>

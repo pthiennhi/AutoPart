@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="backgroundBlue">#F6FAFD</color>
+    <color name="backgroundGreen">#F2FFFC</color>
+    <color name="backgroundOrange">#FFF8ED</color>
+    <color name="backgroundPink">#FFF5F5</color>
+    <color name="backgroundPurple">#F4ECFF</color>
+    <color name="backgroundSliver">#F3F3F3</color>
+    <color name="backgroundYellow">#FFFEE0</color>
+    <color name="black">#FF000000</color>
+    <color name="blue">#00BCD4</color>
+    <color name="disabled">#D8D8D8</color>
+    <color name="disabledButton">#393939</color>
+    <color name="error">#F75555</color>
+    <color name="greyscale100">#F5F5F5</color>
+    <color name="greyscale200">#EEEEEE</color>
+    <color name="greyscale300">#E0E0E0</color>
+    <color name="greyscale400">#BDBDBD</color>
+    <color name="greyscale50">#FAFAFA</color>
+    <color name="greyscale500">#9E9E9E</color>
+    <color name="greyscale600">#757575</color>
+    <color name="greyscale700">#616161</color>
+    <color name="greyscale800">#424242</color>
+    <color name="greyscale900">#212121</color>
+    <color name="info">#246BFD</color>
+    <color name="orange">#FF9800</color>
+    <color name="primary1">#101010</color>
+    <color name="primary2">#404040</color>
+    <color name="primary3">#707070</color>
+    <color name="primary4">#9F9F9F</color>
+    <color name="primary5">#E7E7E7</color>
+    <color name="purple">#7210FF</color>
+    <color name="secondary1">#797979</color>
+    <color name="secondary2">#949494</color>
+    <color name="secondary3">#AFAFAF</color>
+    <color name="secondary4">#C9C9C9</color>
+    <color name="secondary5">#F2F2F2</color>
+    <color name="success">#4ADE80</color>
+    <color name="transparentBlue">#14335EF7</color>
+    <color name="transparentGreen">#144CAF50</color>
+    <color name="transparentOrange">#14FF9800</color>
+    <color name="transparentPink">#14F75555</color>
+    <color name="transparentPurple">#147210FF</color>
+    <color name="transparentSliver">#14101010</color>
+    <color name="transparentYellow">#14FACC15</color>
+    <color name="warning">#FACC15</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">PRM_AutoPartsSale</string>
+    <string name="channel_description">This is Channel 1</string>
+    <string name="channel_name">Channel_1</string>
+    <string name="gcm_defaultSenderId" translatable="false">150894215384</string>
+    <string name="google_api_key" translatable="false">AIzaSyBVIrRkDqitdSWwnRZvxTHCi2xQNxwzLlo</string>
+    <string name="google_app_id" translatable="false">1:150894215384:android:de3e54dac698e5963557ad</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBVIrRkDqitdSWwnRZvxTHCi2xQNxwzLlo</string>
+    <string name="google_storage_bucket" translatable="false">prm-autopartssales.appspot.com</string>
+    <string name="helCenterSubtitle3">1.Đăng Nhập vào Tài Khoản Của Bạn:\n\nTrước tiên, bạn cần đăng nhập vào tài khoản của mình trên ứng dụng AutoPart bằng thông tin đăng nhập của bạn.\n\n\n2.Tìm Đơn Hàng Cần Huỷ:\n\nSau khi đăng nhập, hãy tìm đến mục \"Lịch sử đơn hàng\" hoặc tương tự trong tài khoản của bạn. Tại đây, bạn sẽ thấy danh sách các đơn hàng đã đặt.\n\n\n\n3.Chọn Đơn Hàng Cần Huỷ:\n\nBấm vào đơn hàng mà bạn muốn huỷ. Bạn sẽ thấy thông tin chi tiết về đơn hàng này.\n\n\n\n4.Chọn Tùy Chọn Huỷ Đơn Hàng:\n\nTrong trang thông tin đơn hàng, bạn sẽ thấy một tùy chọn hoặc nút cho việc huỷ đơn hàng. Bấm vào tùy chọn này.\n\n\n\n5.Theo Dõi Trạng Thái Huỷ Đơn Hàng:\n\nSau khi bạn đã gửi yêu cầu huỷ đơn hàng, bạn có thể theo dõi trạng thái yêu cầu trên tài khoản của mình. AutoPart có thể cung cấp thông tin về việc xử lý yêu cầu huỷ đơn hàng, bao gồm việc hoàn tiền (nếu thích hợp).</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="helpCenterSubtitle1">AutoPart là ứng dụng mua sắm tiện lợi và đáng tin cậy dành cho những người yêu xe ô tô. Với AutoPart, bạn có thể dễ dàng tìm kiếm và mua các phụ tùng ô tô chất lượng từ các nhà sản xuất uy tín, đồng thời tận hưởng trải nghiệm mua sắm trực tuyến an toàn và thuận tiện.</string>
+    <string name="helpCenterSubtitle2">1.Đăng Nhập Hoặc Đăng Ký Tài Khoản:\n\nNếu bạn đã có tài khoản trên AutoPart, đăng nhập bằng thông tin đăng nhập của mình. Nếu chưa, bạn cần đăng ký một tài khoản mới bằng cách cung cấp thông tin cần thiết.\n\n\n2.Tìm Kiếm Phụ Tùng Ô Tô:\n\nSử dụng tính năng tìm kiếm trên ứng dụng AutoPart để tìm kiếm các phụ tùng ô tô mà bạn cần. Bạn có thể tìm kiếm bằng tên phụ tùng, thương hiệu xe, hoặc các tiêu chí khác.\n\n\n3.Chọn Sản Phẩm:\n\nSau khi tìm thấy sản phẩm mà bạn muốn mua, bấm vào nó để xem thông tin chi tiết và mô tả sản phẩm.\n\n\n4.Thêm Vào Giỏ Hàng:\n\nTrên trang sản phẩm, bạn sẽ thấy một nút \"Thêm vào giỏ hàng\" hoặc tương tự. Bấm vào nút này để đưa sản phẩm vào giỏ hàng của bạn.\n\n\n5.Kiểm Tra Giỏ Hàng:\n\nKhi bạn đã chọn tất cả các sản phẩm mà bạn muốn mua, hãy chuyển đến trang giỏ hàng. Ở đây, bạn có thể xem lại danh sách sản phẩm, số lượng, và tổng cộng của đơn hàng.\n\n\n6.Chọn Phương Thức Thanh Toán:\n\nChọn phương thức thanh toán phù hợp với bạn, ví dụ như thanh toán bằng VNPAY.\n\n\n7.Xác Nhận Đơn Hàng:\n\nXác nhận đơn hàng của bạn bằng cách kiểm tra lại thông tin đặt hàng, địa chỉ giao hàng, và phương thức thanh toán. Đảm bảo rằng mọi thông tin đều chính xác.\n\n\n8.Hoàn Tất Đặt Hàng:\n\n Bạn sẽ nhận được một xác nhận đặt hàng qua thông báo trên ứng dụng.\n\n\n9.Theo Dõi Đơn Hàng:\n\nSau khi đặt hàng, bạn có thể theo dõi tình trạng của đơn hàng qua tài khoản của mình trên AutoPart.</string>
+    <string name="helpCenterTitle1">AutoPart là gì?</string>
+    <string name="helpCenterTitle2">Làm sao để đặt hàng?</string>
+    <string name="helpCenterTitle3">Làm sao để huỷ đơn hàng?</string>
+    <string name="logoutSubtite">Bạn có chắc muốn đăng xuất?</string>
+    <string name="logoutTitle">Đăng xuất</string>
+    <string name="onboarding1_description">Ứng dụng phụ kiện xe hơi tốt nhất cho nhu cầu vận chuyển của bạn!</string>
+    <string name="onboarding2_button">Bắt đầu khám phá</string>
+    <string name="onboarding2_description1">"Những phụ kiện ô tô tốt nhất trong tay bạn với "</string>
+    <string name="onboarding2_description2">Car Accessories</string>
+    <string name="privacySubitle1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="privacySubitle2">Magna etiam tempor orci eu lobortis elementum nibh. Vulputate enim nulla aliquet porttitor lacus. Orci sagittis eu volutpat odio. Cras semper auctor neque vitae tempus quam pellentesque nec. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Commodo elit at imperdiet dui. Nisi vitae suscipit tellus mauris a diam. Erat pellentesque adipiscing commodo elit at imperdiet dui. Mi ipsum faucibus vitae aliquet nec ullamcorper. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et.</string>
+    <string name="privacySubitle3">Consequat id porta nibh venenatis cras sed. Ipsum nunc aliquet bibendum enim facilisis gravida neque. Nibh tellus molestie nunc non blandit massa. Quam pellentesque nec nam aliquam sem et tortor consequat id. Faucibus vitae aliquet nec ullamcorper sit amet risus. Nunc consequat interdum varius sit amet. Eget magna fermentum iaculis eu non diam phasellus vestibulum. Pulvinar pellentesque habitant morbi tristique senectus et. Lorem donec massa sapien faucibus et molestie. Massa tempor nec feugiat nisl pretium fusce id. Lacinia at quis risus sed vulputate odio. Integer vitae justo eget magna fermentum iaculis. Eget gravida cum sociis natoque penatibus et magnis.</string>
+    <string name="privacyTitle1">1. Các loại thông tin được thu thập</string>
+    <string name="privacyTitle2">2. Sử dụng dữ liệu cá nhân</string>
+    <string name="privacyTitle3">3. Tiết lộ dữ liệu cá nhân</string>
+    <string name="project_id" translatable="false">prm-autopartssales</string>
+    <string name="shop_name">Tên cửa hàng: <b>Car Accessories</b></string>
+    <string name="viewall"><u>Xem tất cả</u></string>
+    <string name="web_client_id">769749883406-9dk9p5gvfelbi5glfen914du11c5ukfh.apps.googleusercontent.com</string>
+    <style name="Base.Theme.PRM_AutoPartsSale" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+        <item name="fontFamily">@font/nunito_medium</item>
+
+        
+        <item name="colorPrimary">#101010</item>
+        <item name="colorPrimaryVariant">#404040</item>
+        <item name="colorOnPrimary">#E7E7E7</item>
+        
+        <item name="colorSecondary">#797979</item>
+        <item name="colorSecondaryVariant">#949494</item>
+        <item name="colorOnSecondary">#F2F2F2</item>
+        
+        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+        
+        <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+        
+        <item name="radioButtonStyle">@style/Widget.Material3.CompoundButton.RadioButton</item>
+        
+        <item name="switchStyle">@style/Widget.Material3.CompoundButton.MaterialSwitch</item>
+
+    </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+    <style name="RoundedCornersDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@drawable/modal_comming_soon_background</item>
+    </style>
+    <style name="Theme.PRM_AutoPartsSale" parent="Base.Theme.PRM_AutoPartsSale"/>
+</resources>

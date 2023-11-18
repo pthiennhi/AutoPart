@@ -1,0 +1,510 @@
+[
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_fragment_change_address.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/fragment_change_address.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_shape_edit_text.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/shape_edit_text.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_twitter_black.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_twitter_black.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/font_nunito_light.ttf.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/font/nunito_light.ttf"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_profile_image.png.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/profile_image.png"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_privacy_policy.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_privacy_policy.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_activity_main.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_background_tag.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/background_tag.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_chervon_right.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_chervon_right.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/font_nunito_extra_light.ttf.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/font/nunito_extra_light.ttf"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_bottom_bar.png.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/bottom_bar.png"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_fragment_information_shop.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/fragment_information_shop.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_fragment_notification.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/fragment_notification.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_information.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_information.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_fragment_profile.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_onboarding1_image.png.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/onboarding1_image.png"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_check_circle.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_check_circle.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_fragment_processing_order.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/fragment_processing_order.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/font_nunito_black.ttf.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/font/nunito_black.ttf"
+    },
+    {
+        "merged": "group5.com.prm_autopartssale.app-merged_res-41:/layout_fragment_order.xml.flat",
+        "source": "group5.com.prm_autopartssale.app-main-43:/layout/fragment_order.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_banner2.png.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/banner2.png"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_arrow_right.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_arrow_right.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_facebook.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_facebook.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_activity_login.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_fragment_discount_products.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/fragment_discount_products.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_background_button_login.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/background_button_login.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_modal_comming_soon.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/modal_comming_soon.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_star.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_star.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_help_center.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_help_center.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_fragment_onboarding2.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/fragment_onboarding2.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_calling.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_calling.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_order_item.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/order_item.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_calendar.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_calendar.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_shape_square.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/shape_square.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_background_button_plus.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/background_button_plus.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/menu_header_menu.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/menu/header_menu.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_shape_border_circle.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/shape_border_circle.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_facebook_black.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_facebook_black.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_fragment_review_product_detail.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/fragment_review_product_detail.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/menu_bottom_nav_menu.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_order_history_item.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/order_history_item.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/font_nunito_light_italic.ttf.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/font/nunito_light_italic.ttf"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_banner1.png.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/banner1.png"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/font_nunito.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/font/nunito.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_instagram_black.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_instagram_black.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_profile.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_profile.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/font_nunito_italic.ttf.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/font/nunito_italic.ttf"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/anim_slide_in_bottom.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/anim/slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/font_nunito_semibold.ttf.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/font/nunito_semibold.ttf"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/font_nunito_bold.ttf.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/font/nunito_bold.ttf"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_product_item.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/product_item.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_onboarding2_image.png.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/onboarding2_image.png"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_filter.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_filter.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_logout.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_logout.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_noti.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_noti.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_shape_spinner.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/shape_spinner.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_modal_comming_soon_background.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/modal_comming_soon_background.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_fragment_home.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/font_nunito_regular.ttf.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/font/nunito_regular.ttf"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_fragment_onboarding1.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/fragment_onboarding1.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_background_item_profile.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/background_item_profile.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/xml_backup_rules.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/anim_slide_out_bottom.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/anim/slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/font_nunito_medium_italic.ttf.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/font/nunito_medium_italic.ttf"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_more_circle.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_more_circle.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_background_group_item_profile.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/background_group_item_profile.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_chervon_down.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_chervon_down.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_order.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_order.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/font_nunito_medium.ttf.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/font/nunito_medium.ttf"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_background_button_more_radius.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/background_button_more_radius.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_order_history.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_order_history.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_fragment_product_detail.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/fragment_product_detail.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_custom_toast.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/custom_toast.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_order_detail_item.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/order_detail_item.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_category.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_category.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_fragment_completed_order.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/fragment_completed_order.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_fragment_help_center.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/fragment_help_center.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_fragment_change_information.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/fragment_change_information.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_empty_order_image.png.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/empty_order_image.png"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_bottom_sheet_layout.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/bottom_sheet_layout.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_fragment_privacy_policy.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/fragment_privacy_policy.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_empty_order.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/empty_order.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_fragment_description_product_detail.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/fragment_description_product_detail.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_vietnam.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_vietnam.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_home.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_home.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_notification_item.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/notification_item.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/font_nunito_bold_italic.ttf.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/font/nunito_bold_italic.ttf"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_modal_image.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/modal_image.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/font_nunito_semibold_italic.ttf.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/font/nunito_semibold_italic.ttf"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_logo.png.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/logo.png"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_dialog_bottom_sheet_background.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/dialog_bottom_sheet_background.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_shape_circle.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/shape_circle.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_arrow_left.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_arrow_left.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_fragment_order.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/fragment_order.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_location.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_location.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_bottom_nav_background.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/bottom_nav_background.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/font_nunito_extra_light_italic.ttf.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/font/nunito_extra_light_italic.ttf"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/font_nunito_extra_bold_italic.ttf.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/font/nunito_extra_bold_italic.ttf"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_fragment_order_detail.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/fragment_order_detail.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_fragment_category.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/fragment_category.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_google.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_google.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_search.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_search.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_fragment_order_history.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/fragment_order_history.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_information_circle.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_information_circle.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_review_item.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/review_item.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_activity_fill_profile.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/activity_fill_profile.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_circle.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_circle.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_brand_item.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/brand_item.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/layout_activity_onboarding.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/layout/activity_onboarding.xml"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/font_nunito_extra_bold.ttf.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/font/nunito_extra_bold.ttf"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/font_nunito_black_italic.ttf.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/font/nunito_black_italic.ttf"
+    },
+    {
+        "merged": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-merged_res-41:/drawable_ic_edit.xml.flat",
+        "source": "/Users/thiennhi/.gradle/daemon/8.0/group5.com.prm_autopartssale.app-main-43:/drawable/ic_edit.xml"
+    }
+]

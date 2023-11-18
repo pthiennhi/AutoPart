@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/white"
+  tools:context=".fragment.profile.ChangeAddressFragment">
+
+  <!-- TODO: Update blank fragment layout -->
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:paddingHorizontal="24dp"
+      android:paddingVertical="12dp">
+
+
+      <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+          android:id="@+id/iv_back"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="12dp"
+          android:src="@drawable/ic_arrow_left" />
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Địa chỉ"
+          android:textSize="20sp" />
+
+      </LinearLayout>
+      <ImageView
+        android:id="@+id/iv_more"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_more_circle" />
+
+    </LinearLayout>
+
+  </RelativeLayout>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="56dp"
+    android:orientation="vertical">
+    <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      >
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:orientation="vertical">
+        <TextView
+          android:textStyle="bold"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Tên địa chỉ"
+          android:textSize="18sp" />
+        <EditText
+          android:id="@+id/edtNameAdress"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="12dp"
+          android:padding="12dp"
+          android:background="@drawable/shape_edit_text"
+          android:hint="Nhập địa chỉ của bạn"
+          android:textSize="16sp" />
+        <TextView
+          android:textStyle="bold"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="24dp"
+          android:text="Địa chỉ chi tiết"
+          android:textSize="18sp" />
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="12dp"
+          android:padding="12dp"
+          android:background="@drawable/shape_edit_text"
+          android:gravity="center_vertical|center_horizontal"
+          android:orientation="horizontal">
+           <EditText
+            android:id="@+id/edtAddressDetail"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/greyscale50"
+            android:hint="Nhập chi tiết"
+            android:inputType="phone"
+            android:textSize="16sp" />
+          <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_location" />
+
+        </LinearLayout>
+        <TextView
+          android:textStyle="bold"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="24dp"
+          android:text="Tỉnh/Thành phố"
+          android:textSize="18sp" />
+        <Spinner
+          android:id="@+id/citySpinner"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="12dp"
+          android:padding="12dp"
+          android:background="@drawable/shape_spinner"
+          android:gravity="center_vertical|center_horizontal"
+
+          />
+        <TextView
+          android:textStyle="bold"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="24dp"
+          android:text="Quận/Huyện"
+          android:textSize="18sp" />
+        <Spinner
+          android:id="@+id/districtSpinner"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="12dp"
+          android:padding="12dp"
+          android:background="@drawable/shape_spinner"
+          android:gravity="center_vertical|center_horizontal"
+
+          />
+        <TextView
+          android:textStyle="bold"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="24dp"
+          android:text="Phường/Xã"
+          android:textSize="18sp" />
+        <Spinner
+          android:id="@+id/wardSpinner"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="12dp"
+          android:padding="12dp"
+          android:background="@drawable/shape_spinner"
+          android:gravity="center_vertical|center_horizontal"
+
+          />
+      </LinearLayout>
+    </ScrollView>
+    <Button
+      android:id="@+id/btnChange"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Lưu thay đổi"
+      android:paddingHorizontal="16dp"
+      android:paddingVertical="18dp"
+      android:layout_margin="24dp"
+      android:textColor="@color/white"
+      android:textSize="16sp" />
+  </LinearLayout>
+
+</FrameLayout>

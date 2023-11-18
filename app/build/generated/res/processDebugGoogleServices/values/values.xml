@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">150894215384</string>
+    <string name="google_api_key" translatable="false">AIzaSyBVIrRkDqitdSWwnRZvxTHCi2xQNxwzLlo</string>
+    <string name="google_app_id" translatable="false">1:150894215384:android:de3e54dac698e5963557ad</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBVIrRkDqitdSWwnRZvxTHCi2xQNxwzLlo</string>
+    <string name="google_storage_bucket" translatable="false">prm-autopartssales.appspot.com</string>
+    <string name="project_id" translatable="false">prm-autopartssales</string>
+</resources>

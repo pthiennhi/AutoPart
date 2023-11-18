@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:orientation="vertical"
+  android:layout_gravity="center"
+  android:gravity="center"
+  android:paddingVertical="24dp"
+  android:layout_height="match_parent">
+  
+  <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:src="@drawable/modal_image"/>
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Sắp ra mắt"
+    android:textAlignment="center"
+    android:textColor="@color/greyscale900"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:layout_marginTop="24dp"
+    />
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Tính năng đang được phát triển và sẽ sớm ra mắt trong thời gian sắp tới."
+    android:textAlignment="center"
+    android:textColor="@color/greyscale700"
+    android:textSize="16sp"
+    android:paddingHorizontal="32dp"
+    android:layout_marginTop="16dp"
+    />
+  <Button
+    android:id="@+id/btn_back"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Quay lại"
+    android:textColor="@color/white"
+    android:textSize="16sp"
+    android:layout_marginTop="32dp"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="18dp"
+    android:layout_gravity="center"
+    />
+</LinearLayout>

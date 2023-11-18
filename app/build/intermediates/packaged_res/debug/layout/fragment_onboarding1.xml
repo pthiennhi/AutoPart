@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/onboarding1_image"
+  tools:context=".fragment.onboarding.Onboarding1Fragment">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layout_marginBottom="100dp"
+    android:paddingHorizontal="24dp"
+    android:orientation="vertical">
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Chào mừng đến với"
+      android:textColor="@color/white"
+      android:textSize="38dp"
+      />
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="CAR"
+      android:textColor="@color/white"
+      android:textSize="38dp"
+      android:textStyle="bold"
+      android:textFontWeight="900"
+      android:layout_marginTop="16dp"
+      />
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="ACCESSORIES"
+      android:textColor="@color/white"
+      android:textSize="38dp"
+      android:textStyle="bold"
+      android:textFontWeight="900"
+      android:layout_marginTop="8dp"
+      />
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/onboarding1_description"
+      android:textColor="@color/white"
+      android:textSize="18dp"
+      android:layout_marginTop="18dp"
+      />
+
+
+
+
+  </LinearLayout>
+
+
+
+
+</FrameLayout>
