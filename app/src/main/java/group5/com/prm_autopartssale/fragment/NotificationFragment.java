@@ -2,15 +2,14 @@ package group5.com.prm_autopartssale.fragment;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.Toast;
 import androidx.fragment.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -22,7 +21,6 @@ import group5.com.prm_autopartssale.models.DataContainer;
 import group5.com.prm_autopartssale.models.Notification;
 import java.sql.Timestamp;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -34,12 +32,12 @@ import retrofit2.Retrofit;
  * method to create an instance of this fragment.
  */
 public class NotificationFragment extends Fragment {
+
   ImageView iv_back, iv_more;
   ApiService apiService;
   List<Notification> listNotification;
 
   Customer customer;
-
 
 
   public NotificationFragment() {
@@ -63,7 +61,8 @@ public class NotificationFragment extends Fragment {
       Bundle savedInstanceState) {
     View view = inflater.inflate(R.layout.fragment_notification, container, false);
 
-    BottomNavigationView bottomNavigationView = getActivity().findViewById(R.id.bottomNavigationView);
+    BottomNavigationView bottomNavigationView = getActivity().findViewById(
+        R.id.bottomNavigationView);
     int selectedItemId = R.id.notification;
     bottomNavigationView.setSelectedItemId(selectedItemId);
 
@@ -79,16 +78,20 @@ public class NotificationFragment extends Fragment {
         .addConverterFactory(retrofit2.converter.gson.GsonConverterFactory.create())
         .build();
     apiService = retrofitServer.create(ApiService.class);
+    DataContainer dataContainer1 = DataContainer.getInstance();
 
-    if(customer != null){
+    if (customer != null) {
       Call<List<Notification>> notificationCall = apiService.getNotifications(customer.getId());
       notificationCall.enqueue(new Callback<List<Notification>>() {
         @Override
-        public void onResponse(Call<List<Notification>> call, Response<List<Notification>> response) {
-          if(response.isSuccessful() && response.body() != null){
+        public void onResponse(Call<List<Notification>> call,
+            Response<List<Notification>> response) {
+          if (response.isSuccessful() && response.body() != null) {
             listNotification = response.body();
             Log.d("Notification", listNotification.toString());
-            NotificationAdapter notificationAdapter = new NotificationAdapter(getContext(), listNotification);
+            dataContainer1.setListNotification(listNotification);
+            NotificationAdapter notificationAdapter = new NotificationAdapter(getContext(),
+                listNotification);
             recyclerView.setAdapter(notificationAdapter);
             recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
@@ -103,18 +106,19 @@ public class NotificationFragment extends Fragment {
       });
     } else {
       listNotification = new ArrayList<>();
-      listNotification.add(new Notification(1, customer.getId(),"Chưa load được thông báo","Vui lòng mở lại home để load lại thông báo", new Timestamp(System.currentTimeMillis()).toString()));
-      NotificationAdapter notificationAdapter = new NotificationAdapter(getContext(), listNotification);
+      listNotification.add(new Notification(1, customer.getId(), "Chưa load được thông báo",
+          "Vui lòng mở lại home để load lại thông báo",
+          new Timestamp(System.currentTimeMillis()).toString()));
+      NotificationAdapter notificationAdapter = new NotificationAdapter(getContext(),
+          listNotification);
       recyclerView.setAdapter(notificationAdapter);
       recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
     }
 
-
-
     iv_back.setOnClickListener(new OnClickListener() {
       @Override
       public void onClick(View v) {
-        if(requireActivity().getSupportFragmentManager().getBackStackEntryCount() > 0){
+        if (requireActivity().getSupportFragmentManager().getBackStackEntryCount() > 0) {
           requireActivity().getSupportFragmentManager().popBackStack();
         }
       }
@@ -127,7 +131,7 @@ public class NotificationFragment extends Fragment {
         popupMenu.getMenuInflater().inflate(R.menu.header_menu, popupMenu.getMenu());
         popupMenu.show();
         popupMenu.setOnMenuItemClickListener(item -> {
-          if(item.getItemId() == R.id.action_exit_app){
+          if (item.getItemId() == R.id.action_exit_app) {
             if (getActivity() != null) {
               getActivity().finish();
             }

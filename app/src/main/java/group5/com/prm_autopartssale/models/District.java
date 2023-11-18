@@ -1,12 +1,8 @@
 package group5.com.prm_autopartssale.models;
 
-import java.util.List;
-
 public class District {
   private String name;
-  private int code;
-
-  private List<Ward> wards;
+  private int id;
 
   public String getName() {
     return name;
@@ -16,19 +12,13 @@ public class District {
     this.name = name;
   }
 
-  public int getCode() {
-    return code;
+  public int getId() {
+    return id;
   }
 
-  public void setCode(int code) {
-    this.code = code;
+  public void setId(int id) {
+    this.id = id;
   }
 
-  public List<Ward> getWards() {
-    return wards;
-  }
 
-  public void setWards(List<Ward> wards) {
-    this.wards = wards;
-  }
 }

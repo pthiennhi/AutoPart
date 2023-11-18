@@ -1,9 +1,10 @@
 package group5.com.prm_autopartssale.fragment;
 
 import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.Debug;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -15,17 +16,26 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
 import android.widget.PopupMenu;
-import android.widget.Toast;
+import android.widget.TextView;
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+import com.google.android.gms.auth.api.identity.SignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import group5.com.prm_autopartssale.R;
+import group5.com.prm_autopartssale.activity.LoginActivity;
 import group5.com.prm_autopartssale.fragment.profile.ChangeAddressFragment;
 import group5.com.prm_autopartssale.fragment.profile.ChangeInformationFragment;
 import group5.com.prm_autopartssale.fragment.profile.HelpCenterFragment;
 import group5.com.prm_autopartssale.fragment.profile.OrderHistoryFragment;
 import group5.com.prm_autopartssale.fragment.profile.PrivacyPolicyFragment;
-import java.io.Console;
+import group5.com.prm_autopartssale.models.Customer;
+import group5.com.prm_autopartssale.models.DataContainer;
 
 /**
  * A simple {@link Fragment} subclass. Use the {@link ProfileFragment#newInstance} factory method to
@@ -36,44 +46,26 @@ public class ProfileFragment extends Fragment {
   LinearLayout llChangeInformation, llChangAddress, llNoification, llOrderHistory, llPrivacyPolicy, llHelpCenter, llLogout;
   ImageView ivBack, ivMore;
 
-  // TODO: Rename parameter arguments, choose names that match
-  // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-  private static final String ARG_PARAM1 = "param1";
-  private static final String ARG_PARAM2 = "param2";
+  TextView tvName, tvPhoneNumber;
 
-  // TODO: Rename and change types of parameters
-  private String mParam1;
-  private String mParam2;
-
+  SignInClient oneTapClient;
+  private static final int REQ_ONE_TAP = 99;  // Can be any integer unique to the Activity.
+  private boolean showOneTapUI = true;
   public ProfileFragment() {
     // Required empty public constructor
   }
 
-  /**
-   * Use this factory method to create a new instance of this fragment using the provided
-   * parameters.
-   *
-   * @param param1 Parameter 1.
-   * @param param2 Parameter 2.
-   * @return A new instance of fragment ProfileFragment.
-   */
-  // TODO: Rename and change types and number of parameters
+
   public static ProfileFragment newInstance(String param1, String param2) {
     ProfileFragment fragment = new ProfileFragment();
-    Bundle args = new Bundle();
-    args.putString(ARG_PARAM1, param1);
-    args.putString(ARG_PARAM2, param2);
-    fragment.setArguments(args);
+
     return fragment;
   }
 
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    if (getArguments() != null) {
-      mParam1 = getArguments().getString(ARG_PARAM1);
-      mParam2 = getArguments().getString(ARG_PARAM2);
-    }
+
   }
 
   @Override
@@ -90,6 +82,19 @@ public class ProfileFragment extends Fragment {
     llLogout = rootView.findViewById(R.id.ll_logout);
     ivMore = rootView.findViewById(R.id.iv_more);
     ivBack = rootView.findViewById(R.id.iv_back);
+
+    DataContainer dataContainer = DataContainer.getInstance();
+    Customer customer = dataContainer.getCustomer();
+
+    try {
+      tvName = rootView.findViewById(R.id.tv_name);
+      tvPhoneNumber = rootView.findViewById(R.id.tv_phone_number);
+
+      tvName.setText(customer.getName());
+      tvPhoneNumber.setText(customer.getPhone_number());
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
 
     BottomNavigationView bottomNavigationView = requireActivity().findViewById(R.id.bottomNavigationView);
     int selectedItemId = R.id.profile;
@@ -216,8 +221,12 @@ public class ProfileFragment extends Fragment {
     btnLogout.setOnClickListener(new OnClickListener() {
       @Override
       public void onClick(View v) {
-        //TODO: logout
-        dialog.dismiss();
+//        oneTapClient.signOut().
+        Log.d("ccc", "bomay");
+        SharedPreferences preferences = requireActivity().getSharedPreferences("dataLogin", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.clear().commit();
+        oneTapClient.signOut();
       }
     });
 

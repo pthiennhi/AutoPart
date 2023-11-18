@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="horizontal"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:padding="16dp"
+  android:layout_marginVertical="10dp"
+
+  android:background="@drawable/background_group_item_profile"
+  >
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <ImageView
+      android:id="@+id/iv_thumbnail_item"
+      android:padding="8dp"
+      android:layout_width="120dp"
+      android:layout_height="100dp"
+      android:layout_gravity="top|start"
+      android:background="@drawable/shape_square"
+      android:src="@drawable/profile_image"
+      />
+
+  </LinearLayout>
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginStart="16dp"
+    >
+    <TextView
+      android:id="@+id/tv_product_name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Đèn pha Led DRL"
+      android:textColor="@color/black"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      />
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:orientation="horizontal">
+      <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.028.000đ"
+        android:textColor="@color/greyscale900"
+        android:textStyle="bold"
+        android:textSize="16sp"
+
+        />
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" /1 cái"
+        android:textColor="@color/greyscale900"
+        android:textStyle="bold"
+        android:textSize="16sp"
+
+        />
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginTop="12dp"
+      >
+      <TextView
+        android:id="@+id/tv_minus_product_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="4dp"
+        android:paddingHorizontal="10dp"
+        android:background="@drawable/background_button_plus"
+        android:text="-"
+        android:textColor="@color/greyscale900"
+        android:textSize="12sp"
+        android:layout_marginRight="2dp"
+        />
+      <TextView
+        android:id="@+id/tv_total_product_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20"
+        android:layout_marginHorizontal="8dp"
+        android:textAlignment="center"
+        android:textColor="@color/greyscale900"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        />
+      <TextView
+        android:id="@+id/tv_plus_product_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="4dp"
+        android:paddingHorizontal="10dp"
+        android:background="@drawable/background_button_plus"
+        android:text="+"
+        android:textColor="@color/greyscale900"
+        android:textSize="12sp"
+        android:layout_marginRight="2dp"
+        />
+
+    </LinearLayout>
+
+
+
+  </LinearLayout>
+
+
+
+</LinearLayout>

@@ -8,11 +8,7 @@
     android:icon="@drawable/ic_home"
 
     />
-  <item
-    android:id="@+id/category"
-    android:title="Danh mục"
-    android:icon="@drawable/ic_category"
-    />
+
   <item
     android:id="@+id/order"
     android:title="Giỏ hàng"

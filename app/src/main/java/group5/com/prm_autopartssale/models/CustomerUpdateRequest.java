@@ -5,9 +5,9 @@ public class CustomerUpdateRequest {
   private String phone_number;
   private String address_name;
   private String address_details;
-  private int city_code;
-  private int district_code;
-  private int ward_code;
+  private int province_id;
+  private int district_id;
+  private String ward_code;
   public String getName() {
     return name;
   }
@@ -40,27 +40,27 @@ public class CustomerUpdateRequest {
     this.address_details = address_details;
   }
 
-  public int getCity_code() {
-    return city_code;
+  public int getProvince_id() {
+    return province_id;
   }
 
-  public void setCity_code(int city_code) {
-    this.city_code = city_code;
+  public void setProvince_id(int province_id) {
+    this.province_id = province_id;
   }
 
-  public int getDistrict_code() {
-    return district_code;
+  public int getDistrict_id() {
+    return district_id;
   }
 
-  public void setDistrict_code(int district_code) {
-    this.district_code = district_code;
+  public void setDistrict_id(int district_id) {
+    this.district_id = district_id;
   }
 
-  public int getWard_code() {
+  public String getWard_code() {
     return ward_code;
   }
 
-  public void setWard_code(int ward_code) {
+  public void setWard_code(String ward_code) {
     this.ward_code = ward_code;
   }
 }

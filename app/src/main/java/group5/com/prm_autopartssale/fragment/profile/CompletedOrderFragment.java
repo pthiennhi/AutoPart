@@ -8,9 +8,9 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import group5.com.prm_autopartssale.R;
-import group5.com.prm_autopartssale.adapter.OrderItemAdapter;
+import group5.com.prm_autopartssale.adapter.OrderHistoryItemAdapter;
 import group5.com.prm_autopartssale.constant.Constant;
-import group5.com.prm_autopartssale.models.OrderItem;
+import group5.com.prm_autopartssale.models.OrderHistoryItem;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,15 +42,15 @@ public class CompletedOrderFragment extends Fragment {
       Bundle savedInstanceState) {
     View view = inflater.inflate(R.layout.fragment_completed_order, container, false);
     RecyclerView recyclerView = view.findViewById(R.id.rv_completed_order);
-    List<OrderItem> listOrderItem = new ArrayList<OrderItem>();
+    List<OrderHistoryItem> listOrderHistoryItem = new ArrayList<OrderHistoryItem>();
 
-    listOrderItem.add(new OrderItem("XBY-34", 1700862, Constant.STATUS_COMPLETED, 2 ,
+    listOrderHistoryItem.add(new OrderHistoryItem("XBY-34", 1700862, Constant.STATUS_COMPLETED, 2 ,
         "https://cdn.shopify.com/s/files/1/1961/1987/t/56/assets/RunningBoards.jpg"));
-    listOrderItem.add(new OrderItem("XBY-35", 1700862, Constant.STATUS_COMPLETED, 2 ,
+    listOrderHistoryItem.add(new OrderHistoryItem("XBY-35", 1700862, Constant.STATUS_COMPLETED, 2 ,
         "https://cdn.shopify.com/s/files/1/1961/1987/files/SeatCovers.jpg"));
 
     recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-    recyclerView.setAdapter(new OrderItemAdapter(getContext(), listOrderItem));
+    recyclerView.setAdapter(new OrderHistoryItemAdapter(getContext(), listOrderHistoryItem));
 
     return view;
   }

@@ -20,7 +20,7 @@ import android.widget.Toast;
 import androidx.fragment.app.Fragment;
 import group5.com.prm_autopartssale.R;
 import group5.com.prm_autopartssale.api.ApiService;
-import group5.com.prm_autopartssale.models.City;
+import group5.com.prm_autopartssale.models.Province;
 import group5.com.prm_autopartssale.models.Customer;
 import group5.com.prm_autopartssale.models.CustomerUpdateRequest;
 import group5.com.prm_autopartssale.models.DataContainer;
@@ -30,6 +30,8 @@ import group5.com.prm_autopartssale.models.Ward;
 import java.util.ArrayList;
 import java.util.List;
 import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 import retrofit2.Retrofit;
 
 /**
@@ -42,15 +44,16 @@ public class ChangeAddressFragment extends Fragment {
 
   Customer customer;
 
-  Spinner citySpinner, districtSpinner, wardSpinner;
+  Spinner provinceSpinner, districtSpinner, wardSpinner;
   EditText edtNameAdress, edtAddressDetail;
   Button btnChange;
   ImageView iv_back, iv_more;
 
-  List<City> cities;
+  List<Province> provinces;
   List<District> districts;
   List<Ward> wards;
-  int cityCode = 1 , districtCode = 1, wardCode = 1;
+  int provinceId = 1 , districtId = 1;
+  String wardCode = "1";
 
 
   public ChangeAddressFragment() {
@@ -73,7 +76,7 @@ public class ChangeAddressFragment extends Fragment {
   public View onCreateView(LayoutInflater inflater, ViewGroup container,
       Bundle savedInstanceState) {
     View view = inflater.inflate(R.layout.fragment_change_address, container, false);
-    citySpinner = view.findViewById(R.id.citySpinner);
+    provinceSpinner = view.findViewById(R.id.citySpinner);
     districtSpinner = view.findViewById(R.id.districtSpinner);
     wardSpinner = view.findViewById(R.id.wardSpinner);
     edtNameAdress = view.findViewById(R.id.edtNameAdress);
@@ -88,98 +91,88 @@ public class ChangeAddressFragment extends Fragment {
     edtNameAdress.setText(customer.getAddress_name());
     edtAddressDetail.setText(customer.getAddress_details());
 
-    cities = new ArrayList<>();
+    provinces = new ArrayList<>();
     districts = new ArrayList<>();
     wards = new ArrayList<>();
-
-    Retrofit retrofit = new Retrofit.Builder()
-        .baseUrl("https://provinces.open-api.vn/api/")
-        .addConverterFactory(retrofit2.converter.gson.GsonConverterFactory.create())
-        .build();
 
     Retrofit retrofitServer = new Retrofit.Builder()
         .baseUrl("https://swd-six.vercel.app/api/")
         .addConverterFactory(retrofit2.converter.gson.GsonConverterFactory.create())
         .build();
 
-    apiService = retrofit.create(ApiService.class);
+    apiService = retrofitServer.create(ApiService.class);
 
 
-    Call<List<City>> call = apiService.getCities();
+    Call<List<Province>> provinceCall = apiService.getProvinces();
 
-    call.enqueue(new retrofit2.Callback<List<City>>() {
+    provinceCall.enqueue(new Callback<List<Province>>() {
       @Override
-      public void onResponse(Call<List<City>> call, retrofit2.Response<List<City>> response) {
-        if (response.isSuccessful() && response.body() != null) {
-          cities = response.body();
-
-          // Create a list of city names from the API response
-          List<String> cityNames = new ArrayList<>();
-          for (City city : cities) {
-            cityNames.add(city.getName());
+      public void onResponse(Call<List<Province>> call, Response<List<Province>> response) {
+        if (response.isSuccessful()) {
+          provinces = response.body();
+          List<String> provinceNames = new ArrayList<>();
+          for (Province province : provinces) {
+            provinceNames.add(province.getName());
           }
 
           // Populate the citySpinner with city names
-          ArrayAdapter<String> cityAdapter = new ArrayAdapter<>(getContext(),
-              android.R.layout.simple_spinner_item, cityNames);
-          cityAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-          citySpinner.setAdapter(cityAdapter);
-          citySpinner.setSelection(getCityPosition(customer.getCity_code()));
+          ArrayAdapter<String> provinceAdapter = new ArrayAdapter<>(getContext(),
+              android.R.layout.simple_spinner_item, provinceNames);
+          provinceAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+          provinceSpinner.setAdapter(provinceAdapter);
+          if (customer != null) {
+            provinceSpinner.setSelection(getProvincePosition(customer.getProvince_id()));
 
+          } else {
+            provinceSpinner.setSelection(0);
+          }
 
         }
-
       }
 
       @Override
-      public void onFailure(Call<List<City>> call, Throwable t) {
-        System.out.println("Error");
+      public void onFailure(Call<List<Province>> call, Throwable t) {
+        Log.d("TAG", "onFailure: " + t.getMessage());
+
       }
     });
 
-
-
-
-
-    citySpinner.setOnItemSelectedListener(new OnItemSelectedListener() {
+    provinceSpinner.setOnItemSelectedListener(new OnItemSelectedListener() {
       @Override
       public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        if (!cities.isEmpty() && position >= 0 && position < cities.size()) {
-          cityCode = cities.get(position).getCode();
-          Call<City> cityCall = apiService.getCity(cityCode, 2);
-          cityCall.enqueue(new retrofit2.Callback<City>() {
-            @Override
-            public void onResponse(Call<City> call,
-                retrofit2.Response<City> response) {
-              if (response.isSuccessful() && response.body() != null) {
-                districts = response.body().getDistricts();
-
-                // Create a list of district names from the API response
-                List<String> districtNames = new ArrayList<>();
-                for (District district : districts) {
-                  districtNames.add(district.getName());
-                }
-
-                // Populate the districtSpinner with district names
-                ArrayAdapter<String> districtAdapter = new ArrayAdapter<>(getContext(),
-                    android.R.layout.simple_spinner_item, districtNames);
-                districtAdapter.setDropDownViewResource(
-                    android.R.layout.simple_spinner_dropdown_item);
-                districtSpinner.setAdapter(districtAdapter);
-                districtSpinner.setSelection(getDistrictPosition(customer.getDistrict_code()));
-              } else {
-                Log.d("DistrictData", "Error");
+        provinceId = provinces.get(position).getId();
+        Call<List<District>> districtCall = apiService.getDistricts(provinceId);
+        districtCall.enqueue(new Callback<List<District>>() {
+          @Override
+          public void onResponse(Call<List<District>> call, Response<List<District>> response) {
+            if (response.isSuccessful()) {
+              districts = response.body();
+              List<String> districtNames = new ArrayList<>();
+              for (District district : districts) {
+                districtNames.add(district.getName());
               }
+
+              // Populate the citySpinner with city names
+              ArrayAdapter<String> districtAdapter = new ArrayAdapter<>(getContext(),
+                  android.R.layout.simple_spinner_item, districtNames);
+              districtAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+              districtSpinner.setAdapter(districtAdapter);
+              if (customer != null) {
+                districtSpinner.setSelection(getDistrictPosition(customer.getDistrict_id()));
+
+              } else {
+                districtSpinner.setSelection(0);
+              }
+
             }
+          }
 
-            @Override
-            public void onFailure(Call<City> call, Throwable t) {
-              t.printStackTrace();
-            }
-          });
-        }
+          @Override
+          public void onFailure(Call<List<District>> call, Throwable t) {
+            Log.d("TAG", "onFailure: " + t.getMessage());
 
-
+          }
+        });
       }
 
       @Override
@@ -191,37 +184,39 @@ public class ChangeAddressFragment extends Fragment {
     districtSpinner.setOnItemSelectedListener(new OnItemSelectedListener() {
       @Override
       public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        if(!districts.isEmpty() && position >= 0 && position < districts.size()){
-          districtCode = districts.get(position).getCode();
-          Call<District> districtCall = apiService.getDistrict(districtCode, 2);
-          districtCall.enqueue(new retrofit2.Callback<District>() {
-            @Override
-            public void onResponse(Call<District> call, retrofit2.Response<District> response) {
-              if (response.isSuccessful() && response.body() != null) {
-                wards = response.body().getWards();
-
-                // Create a list of ward names from the API response
-                List<String> wardNames = new ArrayList<>();
-                for (Ward ward : wards) {
-                  wardNames.add(ward.getName());
-                }
-
-                // Populate the wardSpinner with ward names
-                ArrayAdapter<String> wardAdapter = new ArrayAdapter<>(getContext(),
-                    android.R.layout.simple_spinner_item, wardNames);
-                wardAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                wardSpinner.setAdapter(wardAdapter);
-                wardSpinner.setSelection(getWardPosition(customer.getWard_code()));
+        districtId = districts.get(position).getId();
+        Call<List<Ward>> wardCall = apiService.getWards(districtId);
+        wardCall.enqueue(new Callback<List<Ward>>() {
+          @Override
+          public void onResponse(Call<List<Ward>> call, Response<List<Ward>> response) {
+            if (response.isSuccessful()) {
+              wards = response.body();
+              List<String> wardNames = new ArrayList<>();
+              for (Ward ward : wards) {
+                wardNames.add(ward.getName());
               }
-            }
 
-            @Override
-            public void onFailure(Call<District> call, Throwable t) {
-              System.out.println("Error");
-            }
-          });
-        }
+              // Populate the citySpinner with city names
+              ArrayAdapter<String> wardAdapter = new ArrayAdapter<>(getContext(),
+                  android.R.layout.simple_spinner_item, wardNames);
+              wardAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+              wardSpinner.setAdapter(wardAdapter);
+              if (customer != null) {
+                wardSpinner.setSelection(getWardPosition(customer.getWard_code()));
 
+              } else {
+                wardSpinner.setSelection(0);
+              }
+
+            }
+          }
+
+          @Override
+          public void onFailure(Call<List<Ward>> call, Throwable t) {
+            Log.d("TAG", "onFailure: " + t.getMessage());
+
+          }
+        });
       }
 
       @Override
@@ -233,9 +228,7 @@ public class ChangeAddressFragment extends Fragment {
     wardSpinner.setOnItemSelectedListener(new OnItemSelectedListener() {
       @Override
       public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        if(!wards.isEmpty() && position >= 0 && position < wards.size()){
-          wardCode = wards.get(position).getCode();
-        }
+        wardCode = wards.get(position).getCode();
       }
 
       @Override
@@ -263,8 +256,8 @@ public class ChangeAddressFragment extends Fragment {
         CustomerUpdateRequest updateRequest = new CustomerUpdateRequest();
         updateRequest.setAddress_name(nameAddress);
         updateRequest.setAddress_details(addressDetail);
-        updateRequest.setCity_code(cityCode);
-        updateRequest.setDistrict_code(districtCode);
+        updateRequest.setProvince_id(provinceId);
+        updateRequest.setDistrict_id(districtId);
         updateRequest.setWard_code(wardCode);
         Call<ResponseMessage> customerCall1 = apiService.updateCustomer(customer.getId(), updateRequest);
         customerCall1.enqueue(new retrofit2.Callback<ResponseMessage>() {
@@ -355,9 +348,9 @@ public class ChangeAddressFragment extends Fragment {
     return view;
   }
 
-  private int getCityPosition(int cityCode){
-    for(int i = 0; i < cities.size(); i++){
-      if(cities.get(i).getCode() == cityCode){
+  private int getProvincePosition(int cityCode){
+    for(int i = 0; i < provinces.size(); i++){
+      if(provinces.get(i).getId() == cityCode){
         return i;
       }
     }
@@ -366,16 +359,16 @@ public class ChangeAddressFragment extends Fragment {
 
   private int getDistrictPosition(int districtCode){
     for(int i = 0; i < districts.size(); i++){
-      if(districts.get(i).getCode() == districtCode){
+      if(districts.get(i).getId() == districtCode){
         return i;
       }
     }
     return 0;
   }
 
-  private int getWardPosition(int wardCode){
+  private int getWardPosition(String wardCode){
     for(int i = 0; i < wards.size(); i++){
-      if(wards.get(i).getCode() == wardCode){
+      if(wards.get(i).getCode().equals(wardCode)){
         return i;
       }
     }

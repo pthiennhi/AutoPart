@@ -2,7 +2,7 @@ package group5.com.prm_autopartssale.models;
 
 public class Ward {
   private String name;
-  private int code;
+  private String code;
 
   public String getName() {
     return name;
@@ -12,11 +12,11 @@ public class Ward {
     this.name = name;
   }
 
-  public int getCode() {
+  public String getCode() {
     return code;
   }
 
-  public void setCode(int code) {
+  public void setCode(String code) {
     this.code = code;
   }
 }

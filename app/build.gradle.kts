@@ -23,6 +23,7 @@ android {
         release {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+
         }
     }
     compileOptions {
@@ -32,7 +33,7 @@ android {
 }
 
 dependencies {
-
+    implementation("com.google.android.gms:play-services-auth:20.7.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
@@ -46,5 +47,13 @@ dependencies {
     implementation("com.google.firebase:firebase-auth")       //Firebase Authen
     implementation("com.google.code.gson:gson:2.10.1")   //Convert Object to Json
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")  //Convert Json to Object
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.okhttp3:okhttp")
+    implementation ("com.github.denzcoskun:ImageSlideshow:0.1.2")
+
+    implementation("com.google.android.gms:play-services-maps:18.2.0")
+
+
+
+//Convert Json to Object
 }

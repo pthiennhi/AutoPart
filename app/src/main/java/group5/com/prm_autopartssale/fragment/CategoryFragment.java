@@ -59,9 +59,7 @@ public class CategoryFragment extends Fragment {
       Bundle savedInstanceState) {
     View view = inflater.inflate(R.layout.fragment_category, container, false);
     BottomNavigationView bottomNavigationView = getActivity().findViewById(R.id.bottomNavigationView);
-    int selectedItemId = R.id.category;
 
-    bottomNavigationView.setSelectedItemId(selectedItemId);
 
 
     return view;

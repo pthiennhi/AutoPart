@@ -1,63 +1,64 @@
 package group5.com.prm_autopartssale.models;
 
 public class OrderItem {
-  private String id;
-  private double total_price;
-  private String status;
+  private int id;
+  private String name;
+  private double price;
+  private int quantity;
+  private int weight;
 
-  private int total_item;
 
-  private String image_url;
 
   public OrderItem() {
   }
 
-  public OrderItem(String id, double total_price, String status, int total_item,
-      String image_url) {
+  public OrderItem(int id, String name, double price, int quantity, int weight) {
     this.id = id;
-    this.total_price = total_price;
-    this.status = status;
-    this.total_item = total_item;
-    this.image_url = image_url;
+    this.name = name;
+    this.price = price;
+    this.quantity = quantity;
+    this.weight = weight;
   }
 
-  public String getId() {
+  public int getId() {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(int id) {
     this.id = id;
   }
 
-  public double getTotal_price() {
-    return total_price;
+  public String getName() {
+    return name;
   }
 
-  public void setTotal_price(double total_price) {
-    this.total_price = total_price;
+  public void setName(String name) {
+    this.name = name;
   }
 
-  public String getStatus() {
-    return status;
+  public double getPrice() {
+    return price;
   }
 
-  public void setStatus(String status) {
-    this.status = status;
+  public void setPrice(double price) {
+    this.price = price;
   }
 
-  public int getTotal_item() {
-    return total_item;
+  public int getQuantity() {
+    return quantity;
   }
 
-  public void setTotal_item(int total_item) {
-    this.total_item = total_item;
+  public void setQuantity(int quantity) {
+    this.quantity = quantity;
   }
 
-  public String getImage_url() {
-    return image_url;
+  public int getWeight() {
+    return weight;
   }
 
-  public void setImage_url(String image_url) {
-    this.image_url = image_url;
+  public void setWeight(int weight) {
+    this.weight = weight;
   }
+
+
 }

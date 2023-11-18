@@ -1,6 +1,8 @@
 package group5.com.prm_autopartssale.activity;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
@@ -41,17 +43,27 @@ public class MainActivity extends AppCompatActivity {
 
   private int selectedItemId = R.id.home;
 
-  Customer customer = new Customer();
+  Customer customer;
+
+
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
+    SharedPreferences sharedPreferences = getSharedPreferences("dataLogin", MODE_PRIVATE);
+    String customer_id = sharedPreferences.getString("customer_id", "");
 
-    FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference myRef = database.getReference("message");
+    DataContainer dataContainer = DataContainer.getInstance();
+    if (dataContainer.getCustomer() != null) {
+      customer = dataContainer.getCustomer();
+    } else {
+      customer = new Customer();
+      customer.setId(customer_id);
+    }
 
-    myRef.setValue("Hello, World!");
+    Log.d("customer", customer.getId());
+
     Retrofit retrofit = new Retrofit.Builder()
         .baseUrl("https://swd-six.vercel.app/api/")
         .addConverterFactory(retrofit2.converter.gson.GsonConverterFactory.create())
@@ -59,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
 
     apiService = retrofit.create(ApiService.class);
     
-    Call<Customer> customerCall = apiService.getCustomer("1");
+    Call<Customer> customerCall = apiService.getCustomer(customer.getId());
 
 
     customerCall.enqueue(new retrofit2.Callback<Customer>() {
@@ -104,8 +116,7 @@ public class MainActivity extends AppCompatActivity {
 
     if (itemId == R.id.home) {
       return homeFragment;
-    } else if (itemId == R.id.category) {
-      return categoryFragment;
+
     } else if (itemId == R.id.order) {
       return orderFragment;
     } else if (itemId == R.id.notification) {
@@ -133,8 +144,7 @@ public class MainActivity extends AppCompatActivity {
   private int getNavItemForFragment(Fragment fragment) {
     if (fragment instanceof HomeFragment) {
       return R.id.home;
-    } else if (fragment instanceof CategoryFragment) {
-      return R.id.category;
+
     } else if (fragment instanceof OrderFragment) {
       return R.id.order;
     } else if (fragment instanceof NotificationFragment) {

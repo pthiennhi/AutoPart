@@ -8,9 +8,9 @@ import android.view.ViewGroup;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import group5.com.prm_autopartssale.R;
-import group5.com.prm_autopartssale.adapter.OrderItemAdapter;
+import group5.com.prm_autopartssale.adapter.OrderHistoryItemAdapter;
 import group5.com.prm_autopartssale.constant.Constant;
-import group5.com.prm_autopartssale.models.OrderItem;
+import group5.com.prm_autopartssale.models.OrderHistoryItem;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,15 +42,15 @@ public class ProcessingOrderFragment extends Fragment {
     View view = inflater.inflate(R.layout.fragment_processing_order, container, false);
 
     RecyclerView recyclerView = view.findViewById(R.id.rv_processing_order);
-    List<OrderItem> listOrderItem = new ArrayList<OrderItem>();
+    List<OrderHistoryItem> listOrderHistoryItem = new ArrayList<OrderHistoryItem>();
 
-    listOrderItem.add(new OrderItem("XBY-32", 1700862, Constant.STATUS_CONFIRMED, 2 ,
+    listOrderHistoryItem.add(new OrderHistoryItem("XBY-32", 1700862, Constant.STATUS_CONFIRMED, 2 ,
         "https://cdn.shopify.com/s/files/1/1961/1987/t/56/assets/RunningBoards.jpg"));
-    listOrderItem.add(new OrderItem("XBY-33", 1700862, Constant.STATUS_PAID, 2 ,
+    listOrderHistoryItem.add(new OrderHistoryItem("XBY-33", 1700862, Constant.STATUS_PAID, 2 ,
         "https://cdn.shopify.com/s/files/1/1961/1987/files/SeatCovers.jpg"));
 
     recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-    recyclerView.setAdapter(new OrderItemAdapter(getContext(), listOrderItem));
+    recyclerView.setAdapter(new OrderHistoryItemAdapter(getContext(), listOrderHistoryItem));
 
 
 
